@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:contentDescription="Logo PetCare+"
+            app:srcCompat="@drawable/logocerta" />
+
+        <!-- FOTO DO PET -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:contentDescription="Foto do pet"
+            app:srcCompat="@drawable/tartarugaperfil" />
+
+        <!-- NOME DO PET -->
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:hint="Nome do pet"
+            android:inputType="text"
+            android:textColor="#04215A"
+            android:textColorHint="#959595"
+            android:textSize="20sp" />
+
+        <!-- TIPO DE PET -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="399dp"
+            android:layout_height="36dp"
+            android:text="Tipo de pet:"
+            android:textColor="#021F57"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- OPÇÕES DE PET -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="146dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cachorro"
+                android:textColor="#04215A"
+                android:textSize="16sp"
+                app:buttonTint="#529BE5" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gato"
+                android:textColor="#04215A"
+                android:textSize="16sp"
+                app:buttonTint="#529BE5" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outro"
+                android:textColor="#04215A"
+                android:textSize="16sp"
+                app:buttonTint="#529BE5" />
+
+        </RadioGroup>
+
+        <!-- CARTEIRA DE VACINAÇÃO -->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Carteira de vacinação em dia"
+            android:textColor="#04215A"
+            android:textSize="20sp"
+            app:buttonTint="#529BE5" />
+
+        <!-- BOTÃO -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:backgroundTint="#529BE5"
+            android:text="Salvar cadastro"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
